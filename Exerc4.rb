@@ -3,6 +3,7 @@
 # total da compra, faça um software que solicite o valor total do pedido
 # solicite o valor da porcentagem e logo após mostre o valor com desconto
 # e o valor descontado
+# se o valor total descontato der inferior a $ 3, oferecer um item a mais.
 
 # João ficará MUITO feliz se vc resolver o problema dele.
 
@@ -18,7 +19,18 @@ valordesconto = percentual * totalcompra
 
 total = totalcompra - valordesconto
 
-puts ("O com desconto a ser pago pelo cliente é $ #{total.round(2)}")
-puts ("O percentual de desconto é #{percentualdesconto.to_i}% ")
-puts ("O total de desconto concedido  é $ #{valordesconto.round(2)}")
-puts ("O valor original sem desconto é #{totalcompra.round(2)}")
+if total <= 3
+  puts "========================"
+  puts "O valor com desconto a ser pago pelo cliente é $ #{total.round(2)}"
+  puts "========================"
+  puts "Ofereça um item a mais"
+else
+  puts "========================"
+  puts "O valor com desconto a ser pago pelo cliente é $ #{total.round(2)}"
+  puts "========================"
+
+end
+
+puts "O percentual de desconto é #{percentualdesconto.to_i}% "
+puts "O total de desconto concedido  é $ #{valordesconto.round(2)}"
+puts "O valor original sem desconto é #{totalcompra.round(2)}"
