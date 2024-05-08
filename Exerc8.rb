@@ -18,6 +18,7 @@ loop do
   nota = input.to_i
   if nota >= 1 && nota <= 5
     notas << nota
+    puts "Nota armazenada com sucesso!"
   else
     puts "Por favor, digite uma nota válida (de 1 a 5)!"
   end
@@ -27,5 +28,5 @@ if notas.empty?
   puts "Nenhuma nota foi inserida."
 else
   media = notas.sum.to_f / notas.size
-  puts "Média das notas: #{media.round(2)}"
+    puts "Média das notas: #{media.round(2)}"
 end
