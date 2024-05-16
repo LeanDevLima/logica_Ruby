@@ -8,12 +8,7 @@ def iniciar_programa
   puts "O que gostaria de fazer?"
 
   loop do
-    puts "\nEscolha uma opção:"
-    puts "1 - Cadastrar aluno"
-    puts "2 - Cadastrar Nota de aluno"
-    puts "3 - Relatório das notas em média dos alunos"
-    puts "0 - Sair"
-
+    menu()
     opcao = gets.chomp.to_i
 
     case opcao
@@ -30,6 +25,14 @@ def iniciar_programa
       puts "Opção inválida. Tente novamente."
     end
   end
+end
+
+def menu
+  puts "\nEscolha uma opção:"
+  puts "1 - Cadastrar aluno"
+  puts "2 - Cadastrar Nota de aluno"
+  puts "3 - Relatório das notas em média dos alunos"
+  puts "0 - Sair"
 end
 
 def cadastrar_aluno(alunos)
