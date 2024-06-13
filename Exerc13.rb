@@ -11,7 +11,6 @@
 #   Se o cpf já foi vacinado, mostrar a mensagem colaborador já tomou a primeira dose
 #   Se não pedir os outros dados do cadastro do colaborador
 
-
 class Colaborador
   attr_accessor :nome, :sobrenome, :cpf, :vacinado
 
