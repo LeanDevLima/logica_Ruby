@@ -22,3 +22,5 @@ Além de concluir todas as aulas e exercícios, passei por uma entrevista técni
 ## Certificado
 
 O certificado de conclusão foi obtido após a entrevista técnica, validando todo o conhecimento adquirido ao longo do curso.
+
+📜 [Clique para ver o Certificado](https://github.com/LeanDevLima/logica_Ruby/blob/main/certificado-ptbr.pdf)
